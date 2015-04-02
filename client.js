@@ -123,10 +123,3 @@ socket.on('duplicate_custom_shortUrl', function(result) {
 	shortUrlOutputElement.innerHTML = 
 		"<p>Antamasi lyhyt URL \"" + result + "\" on varattu.";
 });
-
-socket.on('url_found', function(result) {
-	// result == pitkä URL-osoite, joka löytyi tietokannasta
-	// ja johon siirrytään selaimella
-	console.log(result);
-	window.location.assign(result);
-});
