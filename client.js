@@ -119,9 +119,6 @@ socket.on('url_added', function(result) {
 
 socket.on('duplicate_custom_shortUrl', function(result) {
 	// result == lyhyt URL, jonka käyttäjä syötti itse ja joka löytyy jo tietokannasta.
-	
-	var duplicateShortUrl = result;
-	
 	shortUrlOutputElement.setAttribute('class','visible');
 	shortUrlOutputElement.innerHTML = 
 		"<p>Antamasi lyhyt URL \"" + result + "\" on varattu.";

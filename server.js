@@ -7,7 +7,6 @@ var port = 3001;
 
 // MySQL
 var mysql = require('mysql');
-var connectionName;
 // Alla olevien tulee vastata MySQL-tietokantaa
 var dbname = 'urlshortener';
 var tablename = 'url';
